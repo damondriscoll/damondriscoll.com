@@ -21,13 +21,16 @@
 .page-header { padding: 1.5rem 0;
 
   .avatar {
-    width: 95px;
+    width: 150px;
+    height: 150px;
     max-width: 100%;
     overflow: hidden;
-    @include border-radius(100px);
+    @include border-radius(50%);
     margin: 0 auto;
     display: block;
+    object-fit: cover;
   }
+
 
   .header-name {
     @include sans;
@@ -75,24 +78,26 @@
 }
 
 .icon-links {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  top: 4px;
+  position: relative;
   list-style: none;
   position: relative;
-  top: 4px;
   text-align: center;
+
   border-top: 2px solid #c7c7c7;
   padding-top: .4rem;
+  max-width: 300px;
 
   @include media_larger_than_mobile {
-    float: right;
     border-top: none;
     padding-top: 0;
   }
 
   .icon-link-item {
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 0 5px;
   }
 
   .icon-link { display: inline-block;
@@ -105,6 +110,9 @@
 
   .icon {
     height: 28px;
+    path {
+      fill: #808080; /* Darker color */
+    }
   }
 }
 
@@ -171,7 +179,57 @@
     }
   }
 
-  .resume-item-copy { margin: .75rem 0 0; }
+  .resume-item-copy { 
+    margin: .75rem 0 0;
+  }
+
+  /* Style for the unordered list */
+  /* Style for the unordered list */
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  /* Style for list items */
+  li {
+    flex: 1 1 auto;
+    margin: 5px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+
+  .icon-link {
+    display: inline-flex; /* Makes the hyperlink fit the content width */
+    align-items: center;
+    text-decoration: none; /* Removes underline from the hyperlink */
+    margin-left: 0 5px; /* From .icon-link-item */
+  }
+  
+  .icon-link img, /* if using an image */
+  .icon-link svg { /* if using an SVG */
+    width: 1em; /* Adjust size to match the text */
+    height: 1em;
+    vertical-align: middle; /* Align vertically with text */
+    margin-left: 0.5em; /* Optional: spacing between text and icon */
+  }
+  
+  .icon {
+    height: 28px;
+  }
+  
+  .icon path {
+    fill: #808080; /* Darker color */
+  }
+  
+  /* Hover effect */
+  .icon-link:hover .icon path {
+    fill: #333;
+    transition: all .2s ease; /* Ensure you have transition included */
+  }
+
 }
 
 // footer styles
@@ -189,7 +247,7 @@
 
     > a {
       font-weight: 700;
-      color: #333;
+      color: #727272;
     }
   }
 }

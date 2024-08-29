@@ -1,16 +1,18 @@
-# Projects
-# uncomment the urls if you wish to display them, and add your own URL
-
-# jazznotes.io
-- project: jazznotes.io
-  role: Founder & Primary Developer
-  duration: 2012 &mdash; Present
+- project: Full Stack Movie Store
+  role: AWS, Tomcat, MySQL, Java, JDBC, jQuery
+  duration: April 2023 &mdash; June 2023
   # url: "#"
-  description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
+  description: <ul><li>Developed a full stack movie store website using Java, Apache Tomcat, and MySQL on AWS, enabling robust search, sorting, and cart functionality with secure login and session management.</li><li>Engineered a responsive frontend with jQuery for dynamic content retrieval, Bootstrap for styling, and implemented JSON-based data transfer between frontend and backend.</li><li>Implemented advanced features like connection pooling, master-slave replication, and load balancer setup for scalability, alongside an Android app mirroring the website's functionalities.</li></ul>
 
-# Springfield Community Outreach Group
-- project: Springfield Community Outreach Group
-  role: Co-Founder & Organizer
-  duration: 2007 &mdash; Present
-  # url: "#"
-  description: SCOG is a local monthly meetup in Springfield where we share opportunities to volunteer in the community and organize support for families and neighborhoods in need of assistance that the community can provide.
+- project: Terminal-Based Blackjack
+  role: C++, CMake, Github Actions
+  duration: Dec. 2023 &mdash; Jan. 2024
+  url: "https://github.com/damondriscoll/blackjack-strat"
+  description: <ul><li>Developed a terminal-based blackjack game replicating casino rules, which warned players of basic strategy errors.</li><li>Utilized C++ to construct distinct classes for the game, deck, and individual cards, ensuring modularity and code organization.</li><li>Implemented GitHub Actions to automate the compilation of versions compatible with Ubuntu, macOS, and Windows upon repository updates.</li></ul>
+
+- project: Deep-Q Minecraft Agent
+  role: PyTorch, Python
+  duration: Jan. 2023 &mdash; March 2023
+  url: "https://github.com/damondriscoll/Minecraft-DQN-Navigation"
+  description: <ul><li>Engineered a Deep-Q Network enabling a Minecraft agent to effectively navigate and land safely in water following substantial falls.</li><li>Orchestrated the creation of an image-contextualizing agent, optimizing actions to maximize reward attainment.</li><li>Engaged in a collaborative effort with a team of two to iteratively develop and troubleshoot issues, contributing to project milestones.</li></ul>
+
