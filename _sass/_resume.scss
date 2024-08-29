@@ -52,7 +52,7 @@
 
   .title-bar {
     @include section_border;
-    margin-top: 2rem;
+    margin-top: 1.4rem;
     padding: .4rem 0;
     @include clearfix;
 
@@ -80,25 +80,27 @@
 .icon-links {
   margin: 0 auto;
   padding: 0;
-  top: 4px;
   position: relative;
   list-style: none;
-  position: relative;
   text-align: center;
   padding-top: .4rem;
   max-width: 300px;
+  display: flex; /* Added */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Ensure it takes full height of its container */
 
   @include media_larger_than_mobile {
     border-top: none;
-    padding-top: 0;
   }
 
   .icon-link-item {
     display: inline-block;
-    margin-left: 0 5px;
+    margin: 0 5px; /* Corrected margin */
   }
 
-  .icon-link { display: inline-block;
+  .icon-link {
+    display: inline-block;
 
     &:hover .icon path {
       fill: #333;
