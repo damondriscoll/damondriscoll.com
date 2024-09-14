@@ -223,9 +223,10 @@
   /* Specific styles for when the company logo is present */
   .resume-item-header {
     display: flex;
-    align-items: center; /* Vertically center the logo and text */
+    align-items: flex-start; /* Align to the top */
     margin-bottom: 1.3rem;
   }
+  
 
   .resume-item-header .company-logo {
     width: 4.375rem;
