@@ -145,22 +145,19 @@
 
   .resume-item { margin-bottom: 2rem; }
 
+  /* General Styles for h3 and h4 (when no logo is present) */
   .resume-item-title {
     @include sans_bold;
-    margin: 0 0 .75rem;
+    margin: 0 0 0.5rem; /* Less space between title and next element */
     font-size: 1.5rem;
     letter-spacing: -.05rem;
-    line-height: 1;
+    line-height: 1.1; /* Slightly reduced line spacing */
   }
 
   .resume-item-details {
     font-size: 1.125rem;
-    margin: 0 0 .75rem;
-    line-height: 1;
-
-    &.award-title {
-      font-size: 1rem;
-    }
+    margin: 0 0 0.5rem; /* Less space between lines */
+    line-height: 1.1; /* Slightly reduced line spacing */
   }
 
   .resume-item-title,
@@ -170,8 +167,8 @@
     a {
       color: #333;
       text-decoration: none;
-      border-bottom: 1px solid;
-
+      border-bottom: 0.0625rem solid;
+      
       &:hover {
         border-bottom: none;
         color: #9c9c9c;
@@ -180,11 +177,9 @@
   }
 
   .resume-item-copy { 
-    margin: .75rem 0 0;
+    margin: 0.75rem 0 0;
   }
 
-  /* Style for the unordered list */
-  /* Style for the unordered list */
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -192,45 +187,71 @@
     list-style-type: none;
   }
 
-  /* Style for list items */
   li {
     flex: 1 1 auto;
-    margin: 5px;
-    padding: 10px;
+    margin: 0.3125rem;
+    padding: 0.625rem;
     background-color: #f0f0f0;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
   }
 
   .icon-link {
-    display: inline-flex; /* Makes the hyperlink fit the content width */
+    display: inline-flex;
     align-items: center;
-    text-decoration: none; /* Removes underline from the hyperlink */
-    margin-left: 0 5px; /* From .icon-link-item */
+    text-decoration: none;
+    margin-left: 0 0.3125rem;
   }
   
-  .icon-link img, /* if using an image */
-  .icon-link svg { /* if using an SVG */
-    width: 1em; /* Adjust size to match the text */
+  .icon-link img, 
+  .icon-link svg {
+    width: 1em;
     height: 1em;
-    vertical-align: middle; /* Align vertically with text */
-    margin-left: 0.5em; /* Optional: spacing between text and icon */
-  }
-  
-  .icon {
-    height: 28px;
-  }
-  
-  .icon path {
-    fill: #808080; /* Darker color */
-  }
-  
-  /* Hover effect */
-  .icon-link:hover .icon path {
-    fill: #333;
-    transition: all .2s ease; /* Ensure you have transition included */
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    height:auto
   }
 
+  .icon path {
+    fill: #808080;
+  }
+  
+  .icon-link:hover .icon path {
+    fill: #333;
+    transition: all 0.2s ease;
+  }
+
+  /* Specific styles for when the company logo is present */
+  .resume-item-header {
+    display: flex;
+    align-items: center; /* Vertically center the logo and text */
+    margin-bottom: 1.3rem;
+  }
+
+  .resume-item-header .company-logo {
+    width: 4.375rem;
+    height: auto;
+    margin-right: 0.625rem;
+  }
+
+  .resume-item-header .resume-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Extra spacing between lines when the logo is present */
+  .resume-item-header .resume-item-title,
+  .resume-item-header .resume-item-details {
+    margin: 0;
+    line-height: 1.4; /* More spacing between lines when the logo is present */
+  }
+
+  /* Additional spacing between the company name and position */
+  .resume-item-header .resume-item-details {
+    margin-top: 0.25rem; /* Extra space between company name and position */
+  }
 }
+
 
 // footer styles
 
