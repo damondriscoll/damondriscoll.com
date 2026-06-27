@@ -1,14 +1,8 @@
-- project: Full Stack Movie Store
-  role: AWS, Tomcat, MySQL, Java, JDBC, jQuery
-  duration: April 2023 &mdash; June 2023
+- project: Self-Hosted Linux Home Lab
+  role: Linux, Docker, Cloudflare, WireGuard, Gluetun
+  duration: [Month, Year] &mdash; [Month, Year]
   # url: "#"
-  description: <ul><li>Developed a full stack movie store website using Java, Apache Tomcat, and MySQL on AWS, enabling robust search, sorting, and cart functionality with secure login and session management.</li><li>Engineered a responsive frontend with jQuery for dynamic content retrieval, Bootstrap for styling, and implemented JSON-based data transfer between frontend and backend.</li><li>Implemented advanced features like connection pooling, master-slave replication, and load balancer setup for scalability, alongside an Android app mirroring the website's functionalities.</li></ul>
-
-- project: Terminal-Based Blackjack
-  role: C++, CMake, Github Actions
-  duration: Dec. 2023 &mdash; Jan. 2024
-  url: "https://github.com/damondriscoll/blackjack-strat"
-  description: <ul><li>Developed a terminal-based blackjack game replicating casino rules, which warned players of basic strategy errors.</li><li>Utilized C++ to construct distinct classes for the game, deck, and individual cards, ensuring modularity and code organization.</li><li>Implemented GitHub Actions to automate the compilation of versions compatible with Ubuntu, macOS, and Windows upon repository updates.</li></ul>
+  description: <ul><li>Built a self-hosted Linux server running several services in isolated Docker containers.</li><li>Configured external access through a Cloudflare Tunnel, avoiding inbound port forwarding and NAT traversal.</li><li>Routed and encrypted container traffic through WireGuard and Gluetun for network isolation.</li></ul>
 
 - project: Deep-Q Minecraft Agent
   role: PyTorch, Python
