@@ -27,8 +27,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-          bundler: latest # ignore the stale Bundler 2.1.4 pin in Gemfile.lock
-          bundler-cache: true # runs `bundle install` and caches gems
+          bundler-cache: true # runs `bundle install` (using Gemfile.lock's Bundler) and caches gems
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
