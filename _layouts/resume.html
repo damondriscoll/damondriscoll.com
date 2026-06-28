@@ -107,7 +107,7 @@
         <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
           <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
           <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" class="icon-link" itemprop="sameAs">{{ project.project }} {% include icons/icon-github.html %}</a></a>{% else %}{{ project.project }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description"><em>{{ project.role }}</em>  &bull; {{ project.duration }}</h4>
+          <h4 class="resume-item-details" itemprop="description"><em>{{ project.role }}</em>{% if project.duration %} &bull; {{ project.duration }}{% endif %}</h4>
           <p class="resume-item-copy">{{ project.description }}</p>
         </div>
         {% endfor %}
@@ -124,8 +124,7 @@
           <h2>🧠 SKILLS</h2>
         </header>
         <div class="resume-item">
-          <p class="resume-item-copy"><ul><li><strong>Programming Languages:</strong> Python, Java, C/C++, JavaScript</li><li><strong>Web Development:</strong> HTML, CSS, jQuery, Bootstrap</li><li><strong>Backend Technologies:</strong> Tomcat, MySQL, JDBC, SQL (MySQL, PostgreSQL)</li><li><strong>DevOps/Cloud:</strong> AWS, Heroku, Docker, GitHub Actions, Git</li><li><strong>Machine Learning/AI:</strong> PyTorch, Deep-Q Networks</li><li><strong>IT Support:</strong> Windows Server 2019, Active Directory, Microsoft Office 365, ServiceNow</li><li><strong>Tools/Software:</strong> CMake, TeamViewer, Microsoft Remote Desktop</li><li><strong>Version Control:</strong> Git</li><li><strong>Other:</strong> Experience with setting up and managing Docker instances using Portainer, experience with remote support, and debugging in educational settings.</li></ul></p>
-          </p>
+          <p class="resume-item-copy"><ul><li><strong>Cloud &amp; Systems Admin:</strong> Windows Server 2019, Active Directory (AD), GPO, RDS, Azure AD Sync, Microsoft 365 (Exchange/SharePoint), Google Workspace</li><li><strong>Networking &amp; Security:</strong> Cato Networks (SASE/Firewall), Cisco/UniFi, DNS, DHCP, NPS, MFA Configuration, SSL/TLS Troubleshooting, VPN (WireGuard/Gluetun)</li><li><strong>Endpoint &amp; Service Management:</strong> Jira Service Management, ServiceNow, Endpoint Central (RMM), Mosyle MDM, Microsoft Intune</li><li><strong>Scripting &amp; Automation:</strong> PowerShell, Python, Bash, SQL, AQL, Docker, WSL, GitHub Actions</li></ul></p>
         </div>
 
       </section>

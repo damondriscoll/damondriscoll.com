@@ -1,6 +1,6 @@
 - project: Self-Hosted Linux Home Lab
   role: Linux, Docker, Cloudflare, WireGuard, Gluetun
-  duration: [Month, Year] &mdash; [Month, Year]
+  # duration:
   # url: "#"
   description: <ul><li>Built a self-hosted Linux server running several services in isolated Docker containers.</li><li>Configured external access through a Cloudflare Tunnel, avoiding inbound port forwarding and NAT traversal.</li><li>Routed and encrypted container traffic through WireGuard and Gluetun for network isolation.</li></ul>
 
